@@ -1,0 +1,412 @@
+:root{
+    --nombre: #(9C27B0);
+    --ff-primaria:'Geologica', sans-serif;
+    --ff-secundaria: 'Montserrat', sans-serif;
+}
+
+/* *{
+    border: 1px solid red;
+} */
+
+html { 
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+    
+*, *:before, *:after {  
+    
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--ff-primaria);
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.contenedor{
+    min-width: 25rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.contenedor2{
+    width: 100%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+  
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+.bgColor{
+    background-color: #ffffff;
+}
+
+.navBar{
+    max-width: 140rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem auto 0 auto;
+}
+
+@media (min-width: 758px) { 
+    .navBar{
+        background-color: black;
+        display: flex;
+        flex-direction: unset;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+}
+
+.navBar__left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 758px) { 
+    .navBar__left{
+        display: flex;
+        flex-direction: unset;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+/* @media (min-width: 758px) { 
+    .navBar__left{
+        display: flex;
+        gap: 3rem;
+    }
+} */
+
+.navBar__right{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 758px) { 
+    .navBar__right{
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+}
+
+.navBar__left__divImg{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 15rem;
+    min-width: 15rem;
+    margin: 0 auto;
+}
+
+p{
+    color: white;
+}
+
+.text__upper{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+@media (min-width: 758px) { 
+    .text__upper{
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        margin: 1.6rem 0;
+    }
+}
+
+.text__upper:hover{
+    color: gray;
+}
+
+
+.navBarSecondary{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(82, 77, 77);
+    flex-wrap: wrap;
+}
+
+@media (min-width: 758px) { 
+    .navBarSecondary{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(82, 77, 77);
+    }
+}
+
+.navBarSecondary__box{
+    padding: 0 1rem;
+}
+
+.navBarSecondary__box:hover{
+    background-color: #ccc;
+}
+
+.mainPage{
+    position: relative;
+    height: auto;
+}
+
+.mainPage__img{
+    height: auto;
+    width: 100%;
+    vertical-align: top; /* esto es porque la imagen dentro del contenedor dejaba un espacio abajo sin rellenar */
+}
+
+@media (min-width: 758px) { 
+    .mainPage__img{
+        height: auto;
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+.mainPage__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(231, 226, 226, 0.5);
+    position: absolute; /* absolute al padre con sus height y width puestos */
+    margin-top: 5rem;/* nos sirve para el responsive */
+    margin-left: 5rem; /* nos sirve para el responsive */
+    height: auto;
+    width: 30%;
+    z-index: 1;
+}
+
+@media (min-width: 758px) { 
+    .mainPage__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(231, 226, 226, 0.5);
+        position: absolute; /* absolute al padre con sus height y width puestos */
+        margin-top: 16%;/* nos sirve para el responsive */
+        margin-left: 10%; /* nos sirve para el responsive */
+        height: 22rem;
+        width: 50rem;
+    }
+}
+
+.mainPage__title__text{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 758px) { 
+    .mainPage__title__text{
+        font-size: 5rem;
+    }
+}
+
+.mainPage__title__container{
+    display: flex;
+}
+
+.mainPage__title__button{
+    color: white;
+    background-color: rgb(189, 18, 18);
+    border-style: none;
+    margin: 0 .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+@media (min-width: 758px) { 
+    .mainPage__title__button{
+        color: white;
+        background-color: rgb(189, 18, 18);
+        border-style: none;
+        padding: 1.5rem 1.5rem;
+        margin: 0 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 1.6rem;
+    }
+}
+
+.navBarAside{
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    right: 0;
+    height: 30rem;
+    width: 7rem;
+    background-color: rgba(rgb(2rgb(227, 64, 27)0, 30), green, blue, 1);
+    overflow: hidden;
+    transition: width 0.2s linear;
+}
+
+.navBarAside:hover{
+    width: 28rem;
+    transition: all 0.5s ease;
+}
+
+.navBarAside__first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navBarAside__list{
+    background-color: rgb(189, 18, 18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    padding: 1rem 0 0 1rem;
+    width: 30rem;
+}
+
+.logo span , .logo_a span{
+    font-weight: bold;
+    padding-left: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.logo_a{
+    position: relative;
+    color: rgb(19, 19, 19);
+    font-size: 1.4rem;
+    display: flex;
+    width: 30rem;
+    padding: 1rem;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.fas{
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    top: 1.2rem;
+    margin-left: 1rem;
+}
+
+.logo_a:hover, .logo:hover{
+    background: #eee;
+}
+
+.img__navBar{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+}
+
+h2{
+    color: white;
+}
+
+.dodgeSection{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.dodgeSection__h2{
+    color: black;
+    text-transform: uppercase;
+}
+
+.pricingBar__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+    margin: 1rem auto;
+    border: .1rem solid gray;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+@media (min-width: 758px) { 
+    .pricingBar__container{
+        flex-direction: row;
+    }
+}
+
+.pricingBar__container__cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.pricingBar__container__text{
+    color: black;
+    margin: .5rem 0;
+}
+
+.text__black{
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+
+.text__reduce{
+    min-width: 10%;
+    font-size: 1rem;
+}
+
+@media (min-width: 758px) { 
+    .text__reduce{
+        width: 65%;
+        font-size: 1.6rem;
+    }
+}
+
+.pricingBar__containerA__a{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(189, 18, 18);
+    color: white;
+    text-transform: uppercase;
+    padding: 1.5rem 1.5rem;
+    width: 30rem;
+}
+
+.span__a{
+    text-align: center;
+    font-size: 1.4rem;
+}
